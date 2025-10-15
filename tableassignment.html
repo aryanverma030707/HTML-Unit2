@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Form </title>
+</head> 
+<body>
+    <form action=" ">
+        <fieldset>
+            <legend> Student Registration Form </legend>
+            Name: <input type="text" name="name" placeholder="Enter your name" required> <br> <br>
+            Age: <input type="number" name="age" min="1" max="100" required> <br> <br>
+            <label for="dob"> Date of Birth: </label>
+            <input type="date" name="dob" id="dob" required> <br> <br>
+            <label for="email"> Email: </label>
+            <input type="email" name="email" id="email" placeholder="example@example .com" required> <br> <br>
+            Phone: <input type="tel" name="phone" placeholder="+91 12345 67890" pattern="[+91]{3} [0-9]{5} [0-9]{5}" required> <br> <br
+            <label for="gender"> Gender: </label>
+            <input type="radio" name="gender" value="male"> Male                    
+            <input type="radio" name="gender" value="female"> Female<br> <br>
+        
+            <label for=" " > Your Branch</label>"
+            <input list="Branch">
+            <datalist id="Branch">
+                <option value="CSE">
+                <option value="IT">
+                <option value="ECE">
+                <option value="EEE">
+                <option value="ME">
+                <option value="CE">
+            </datalist> <br> <br>
+            <label for=""> Your Course </label>
+            <select name="course" id="course" required>
+                <option value="B.Tech"> B.Tech </option>
+                <option value="M.Tech"> M.Tech </option>
+                <option value="MBA"> MBA </option>
+                <option value="MCA"> MCA </option>
+            </select> <br> <br>
+            <label for=" "> Your Class </label>
+            <select name="class" id="class" required>
+                <option value="1st Year"> CSE 11  </option>     
+                <option value="2nd Year"> CSE 21  </option>
+                <option value="3rd Year"> CSE 31  </option>
+                <option value="4th Year"> CSE 41  </option>
+            </select> <br> <br>        
+            <label for=""> Select your subjects </label> <br>
+            <input type="checkbox" name="subject1" value="DSA"> Data Structures and Algorithms <br>
+            <input type="checkbox" name="subject2" value="DBMS"> Database Management System <br>
+            <input type="checkbox" name="subject3" value="CN"> Computer Networks <br>
+            <input type="checkbox" name="subject4" value="OS"> Operating System <br>
+            <input type="checkbox" name="subject5" value="AI"> Artificial Intelligence <br> <br>
+            <label for=""> Your Query  </label>"
+            <textarea name="query" id="query" cols="30" rows="5" placeholder="Write your query here..."></textarea> <br> <br>
+            <label for=" "> Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required> <br> <br>   
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+        </form>
