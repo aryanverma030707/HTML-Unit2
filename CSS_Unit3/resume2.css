@@ -1,0 +1,89 @@
+
+
+:root {
+  --primary-color: #1f6767;
+  --light-bg: #f0eeeee7;
+  --border-color: #e6e6e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333d2;
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fffdfd;
+    padding: 40px; 
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    padding: 28px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    margin: -28px -28px 20px -28px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #0a0a0a;
+  margin-top: 4px;
+}
+
+.contact-info { margin-top: 8px;
+    font-size: 13px;
+    color: #ada5a5;
+    display: wrap;
+    }
+
+
+.contact-info .contact-item { display: inline-block; margin-right: 12px; }
+
+.section { margin-top: 14px; margin-bottom: 14px; }
+
+.section-title {
+    font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 8px;
+}
+.section-content { font-size: 14px; color: #333; }
+
+ul { margin-left: 20px; margin-top: 6px; }
+li { margin-bottom: 6px; }
+
+.experience-item, .education-item, .project-card, .achievement-item, .info-item {
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+
+.experience-header, .education-header { display: flex; justify-content: space-between; }
+
+.experience-header h3, .education-header h3 { font-size: 15px; font-weight: bold; }
+
+.company { font-style: italic; color: #444; font-size: 13px; }
+
+.date { font-size: 12px; color: #666; }
+
+.tech-stack { font-size: 12px; color: #666666; }
+
+.footer { text-align: center; font-size: 12px; color: #666666; margin-top: 12px; }

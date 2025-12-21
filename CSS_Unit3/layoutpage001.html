@@ -1,0 +1,93 @@
+<!DOCTYPE html>     
+<html lang="en">            
+<head>             
+    <meta charset="UTF-8">             
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">             
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">             
+    <title>Layout Page</title>                     
+</head>             
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;                     
+            display: flex;                     
+            flex-direction: column;                     
+        }
+        header {                     
+            background-color: #4CAF50;                     
+            color: white;                     
+            text-align: center;                     
+            padding: 1em;
+        }
+        main {                     
+            flex: 1;                     
+            display: grid;                     
+            grid-template-columns: 1fr 3fr;                     
+            gap: 10px;                     
+            padding: 10px;
+        }
+        .box {                     
+            background-color: #cd3131;                     
+            padding: 20px;                     
+            text-align: center;  
+            gap: 10px;
+            height: auto; 
+            width: 300px;;  
+        }
+        @media screen and (max-width: 600px) {                     
+            main {                         
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;  
+                display: grid;                
+            }                 
+        }
+    </style>             
+<body>             
+    <header>             
+        <h1>Welcome
+             to the Layout Page</h1>             
+    </header>             
+    <main>             
+        <div class="box">           
+            <h2>Box 1</h2>   
+            <p>This is Box 1 content.</p>
+        </div>             
+        <div class="box">             
+            <h2>Box 2</h2>   
+            <p>This is Box 2 content.</p>   
+        </div>       
+         <div class="box">         
+            <h2>Box 3</h2>   
+            <p>This is Box 3 content.</p>  
+        </div>             
+        <div class="box">             
+            <h2>Box 4</h2>   
+            <p>This is Box 4 content.</p>  
+        </div>
+        <div class="box">             
+            <h2>Box 5</h2>   
+            <p>This is Box 5 content.</p>  
+        </div>  
+        <div class="box">             
+            <h2>Box 6</h2>   
+            <p>This is Box 6 content.</p>  
+        </div>
+        <div class="box">             
+            <h2>Box 7</h2>   
+            <p>This is Box 7 content.</p>  
+        </div>  
+        <div class="box">             
+            <h2>Box 8</h2>   
+            <p>This is Box 8 content.</p>  
+        </div>  
+    </main>           
+
+
+        
+        

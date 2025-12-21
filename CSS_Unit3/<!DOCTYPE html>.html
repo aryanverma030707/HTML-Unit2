@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS5 Layout</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<style>
+    body {
+        display: grid;
+        gap: 10px;
+        height: 100px;
+        margin: 0;
+    }
+    header {
+        height: 100px;
+        background-color: #ffbb01;
+        
+    }
+    main {
+        width: 1200px;
+        height: 1000px;
+        background-color: rgb(126, 77, 77);
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        height: 400px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;  
+        flex-wrap: wrap;    
+    }
+    .box{
+        height: 250px;
+        background-color: rgb(93, 186, 232);
+    }
+    footer {
+        height: 100px;
+        background-color: #f85f73;
+    }
+
+</style>
+<body>
+    <header></header>
+    <main>
+        <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        </section>
+    <div class="box"> Three boxes
+    </div>
+
+
+    </main>
+    <footer></footer>
+</body>

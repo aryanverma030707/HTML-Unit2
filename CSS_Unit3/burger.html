@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burger Menu</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background-color:#f7f4f1;
+      color:#ffffffe8;
+      padding:24px 12px;
+      display:flex;
+      justify-content:center;
+    }
+    .menu-box{
+      width:100%;
+      max-width:640px;
+      background-color:#000000;
+      border-radius:10px;
+      overflow:hidden;
+    }
+    .menu-header{
+      padding:20px 22px;
+      background-color:#000000;
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      text-align:center;
+    }
+    h1{
+      margin:0;
+      font-size:28px;
+      color:#ffd700;
+      letter-spacing:1px;
+    }
+    h2{
+      margin:0;
+      font: size 16px;
+      color:#fef6f6;
+    }
+    .menu-content{
+      padding:1px 18px;
+    }
+    .section{
+      margin-bottom:16px;
+    }
+    .menu-list{
+      margin:0;
+      padding:0;
+      border-top:1px solid #2b2b2b;
+    }
+    .menu-item{
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      padding:14px 0;
+      border-bottom:1px dashed rgba(255,255,255,0.04);
+    }
+    
+    .menu-item .name{
+      font-weight:600;
+    }
+    .combos{
+      padding:10px;
+      border-radius:7px;
+      background-color:#ffd700;
+      color:#000000;
+      font-weight:700;
+      text-align:center;
+    }
+    @media(max-width:480px){
+      .menu-header h1{font-size:22px}
+      .menu-item{padding:12px 0}
+      .menu-content{padding:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <main class="menu-box" role="main" aria-labelledby="menu-heading">
+    <header class="menu-header">
+      <h1 id="menu-heading">BURGER</h1>
+      <h2>Menu</h2>
+    </header>
+
+    <div class="menu-content">
+      <div class="section">
+        <ul class="menu-list" aria-label="Burgers">
+          <li class="menu-item"><span class="name">CHEESE BURGER</span><span class="name">₹110</span></li>
+          <li class="menu-item"><span class="name">DOUBLE CHEESE BURGER</span><span class="name">₹170</span></li>
+          <li class="menu-item"><span class="name">CHICKEN CHEESE BURGER</span><span class="name">₹140</span></li>
+          <li class="menu-item"><span class="name">DOUBLE PATTY BURGER</span><span class="name">₹210</span></li>
+          <li class="menu-item"><span class="name">PERI PERI CHICKEN BURGER</span><span class="name">₹195</span></li>
+        </ul>
+      </div>
+
+      <div class="combos" role="region" aria-label="Combos">
+        COMBOS:
+      </div>
+      <div class="section">
+        <ul class="menu-list" aria-label="Combos list">
+          <li class="menu-item"><span class="name">BURGER + FRIES</span><span class="name">₹165</span></li>
+          <li class="menu-item"><span class="name">CHEESE B 164</span><span class="name">₹209</span></li>
+          <li class="menu-item"><span class="name">BIG (B) CHEESE</span><span class="name">₹270</span></li>
+          <li class="menu-item"><span class="name">BLAST B</span><span class="name">₹460</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
